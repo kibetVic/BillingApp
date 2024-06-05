@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f6d23a01dd20400c9a047a87621df36d" Name="Diagram1">
+        <EntityTypeShape EntityType="BillingDBModel.Audit" Width="1.5" PointX="5.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Billing" Width="1.5" PointX="10.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.ChartsOfAccount" Width="1.5" PointX="14.75" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Customer" Width="1.5" PointX="7.5" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Employee" Width="1.5" PointX="10.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.GeneralLedger" Width="1.5" PointX="12.5" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Group" Width="1.5" PointX="0.75" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Message" Width="1.5" PointX="5.25" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Meter" Width="1.5" PointX="6" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.OnlineReceipting" Width="1.5" PointX="12.5" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Reading" Width="1.5" PointX="8.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Role" Width="1.5" PointX="5.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.Session" Width="1.5" PointX="5.125" PointY="22.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.sysdiagram" Width="1.5" PointX="2.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BillingDBModel.User" Width="1.5" PointX="3" PointY="17.625" IsExpanded="true" />
+        <AssociationConnector Association="BillingDBModel.FK_Audits_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Customer_Audits" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Customer_Audits1" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Billings_Meters" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Billings_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Customer_Billings" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_GeneralLedgers_Billings" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_OnlineReceipting_Billings" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_ChartsOfAccounts_GeneralLedgers" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_ChartsOfAccounts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Customer_Messages" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Customer_Meters" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Customer_OnlineReceipting" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Employees_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Employees_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_GeneralLedgers_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Roles_Groups1" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Users_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Messages_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Readings_Meters" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Readings_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Readings_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Roles_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BillingDBModel.FK_Sessions_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

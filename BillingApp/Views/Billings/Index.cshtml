@@ -1,0 +1,123 @@
+﻿@model IEnumerable<BillingApp.Models.Billing>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReferenceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReadingDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreviousReading)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentReading)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnitConsumed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrentBill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreditApplied)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StdCharges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalOutStanding)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duedate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditdateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Meter.MeterHistory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReferenceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReadingDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreviousReading)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentReading)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnitConsumed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrentBill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreditApplied)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdCharges)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalOutStanding)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duedate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditdateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Meter.MeterHistory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BillId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BillId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BillId })
+        </td>
+    </tr>
+}
+
+</table>

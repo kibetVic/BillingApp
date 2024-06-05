@@ -1,0 +1,170 @@
+﻿@model BillingApp.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MidleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MidleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.County)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.County)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubCounty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubCounty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Village)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Village)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuditDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuditDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Audit.OperationType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Audit.OperationType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Audit1.OperationType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Audit1.OperationType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Billing.ReferenceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Billing.ReferenceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Message.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Message.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Meter.MeterHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Meter.MeterHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OnlineReceipting.CustomerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OnlineReceipting.CustomerName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

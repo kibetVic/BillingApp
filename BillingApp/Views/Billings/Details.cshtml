@@ -1,0 +1,146 @@
+﻿@model BillingApp.Models.Billing
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Billing</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferenceId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferenceId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReadingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReadingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousReading)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousReading)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentReading)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentReading)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitConsumed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitConsumed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CurrentBill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditApplied)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditApplied)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StdCharges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StdCharges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalOutStanding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalOutStanding)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duedate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duedate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuditdateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuditdateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Meter.MeterHistory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Meter.MeterHistory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BillId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

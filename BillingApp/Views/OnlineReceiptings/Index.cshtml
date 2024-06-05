@@ -1,0 +1,93 @@
+﻿@model IEnumerable<BillingApp.Models.OnlineReceipting>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiptNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentMethod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaymentAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillingPeriodStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillingPeriodEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BillId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProcceessedBy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Billing.ReferenceId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceiptNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Timestamp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentMethod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PaymentAmount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillingPeriodStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillingPeriodEnd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BillId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remarks)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProcceessedBy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Billing.ReferenceId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReceiptId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReceiptId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReceiptId })
+        </td>
+    </tr>
+}
+
+</table>

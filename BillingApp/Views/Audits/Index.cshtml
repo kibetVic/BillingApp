@@ -1,0 +1,81 @@
+﻿@model IEnumerable<BillingApp.Models.Audit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OperationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TableName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimaryKeyValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OldValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NewValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChangeReason)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationInfo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeStamp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OperationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TableName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimaryKeyValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OldValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NewValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChangeReason)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ApplicationInfo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AuditId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AuditId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AuditId })
+        </td>
+    </tr>
+}
+
+</table>

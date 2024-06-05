@@ -1,0 +1,57 @@
+﻿@model IEnumerable<BillingApp.Models.Meter>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MeterNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GPRS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MeterHistory)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeterNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GPRS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MeterHistory)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MeterId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MeterId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MeterId })
+        </td>
+    </tr>
+}
+
+</table>

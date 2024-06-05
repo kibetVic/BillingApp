@@ -1,0 +1,90 @@
+﻿@model BillingApp.Models.Audit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Audit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeStamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeStamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OperationType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OperationType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TableName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TableName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrimaryKeyValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrimaryKeyValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OldValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OldValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NewValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NewValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChangeReason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChangeReason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationInfo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AuditId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

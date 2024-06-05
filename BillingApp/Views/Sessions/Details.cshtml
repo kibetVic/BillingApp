@@ -1,0 +1,58 @@
+﻿@model BillingApp.Models.Session
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Session</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SessionStartTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SessionStartTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SessionEndtime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SessionEndtime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IpAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IpAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SessionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

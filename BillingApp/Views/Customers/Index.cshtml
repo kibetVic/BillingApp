@@ -1,0 +1,141 @@
+﻿@model IEnumerable<BillingApp.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MidleName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.County)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubCounty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Village)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegistrationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuditDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Audit.OperationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Audit1.OperationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Billing.ReferenceId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message.PhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Meter.MeterHistory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OnlineReceipting.CustomerName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MidleName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.County)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubCounty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Village)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegistrationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuditDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Audit.OperationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Audit1.OperationType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Billing.ReferenceId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message.PhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Meter.MeterHistory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OnlineReceipting.CustomerName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
